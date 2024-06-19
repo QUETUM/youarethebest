@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Surprise</title>
+    <title>The End</title>
     <style>
         * {
             color: white;
@@ -14,54 +14,88 @@
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            align-items: center;
             background: linear-gradient(to top, #ff7e5f, #feb47b);
-
         }
 
-        h1 {
+        h1, h2, h3 {
+            margin: 10px;
             text-align: center;
         }
 
         h3 {
             text-align: left;
+            width: 80%;
+            max-width: 600px;
         }
 
-        #video-container {
-            margin-top: 20px;
+        .link-container {
+            margin: 20px 0;
             display: flex;
-            justify-content: center;
-        }
-
-        video {
-            height: 200px;
-            width: auto;
-            
+            flex-direction: column;
+            align-items: center;
         }
 
         a {
             font-size: 20px;
+            margin: 5px 0;
+        }
+
+        #video-container {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative; /* Ensure relative positioning for absolute positioning of counter */
+        }
+
+        video {
+            width: 80%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        #visit-count {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 1000; /* Ensure counter is above other content */
+        }
+
+        #visit-count img {
+            vertical-align: middle;
         }
     </style>
 </head>
 
 <body>
-    <h1>The Smiling Project!</h1>
-    <h2>Lets just do it!!!!</h2>
-    <a href="rose.html">The Rose </a>
-    <a href="Message.html">Heavy Burden Message </a>
-    <a href="Poem.html">Poem</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdnhT7hsg3u7jAR-J9hlPWT7JQwxXMlxUSH21UAFksc9xDu8g/viewform?usp=sf_link">Rapid Fire</a>
-    <a href="top3.html">The Top Three</a>
-    <a href="tml.html">The First Year Timeline</a>
-    <a href="Video.html">Pout Queen</a>
-    <a href="last.html">The Last Message </a>
+    <h1>Another surprise by Heroooo for Ashure!!!</h1>
+    <h2>Let's just do it!!!!</h2>
+    <h3>So let's begin, choose any of the options from below:</h3>
+
+    <div class="link-container">
+        <a href="rose.html">The First Surprise</a>
+        <a href="Message.html">The Second Surprise</a>
+        <a href="Poem.html">The Third Surprise</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdnhT7hsg3u7jAR-J9hlPWT7JQwxXMlxUSH21UAFksc9xDu8g/viewform?usp=sf_link">The Fourth Surprise</a>
+        <a href="top3.html">The Fifth Surprise</a>
+        <a href="Video.html">The Sixth Surprise</a>
+        <a href="last.html">The Last Thing</a>
+    </div>
 
     <div id="video-container">
         <video src="ash.mp4" loop autoplay muted></video>
+
+        <!-- Visitor Counter -->
+        <div id="visit-count">
+            <a href="https://www.freecounterstat.com" title="free counters for websites">
+                <img src="https://counter4.optistats.ovh/private/freecounterstat.php?c=su453ntr7fex7yazmzf8a2h1mmnbedz6" border="0" title="free counters for websites" alt="free counters for websites">
+            </a>
+        </div>
     </div>
 </body>
 
